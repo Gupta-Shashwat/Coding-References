@@ -1,0 +1,11 @@
+Basic syntax: 
+    selector { Property : Value; Another property : Value; }
+example:
+    p { background-color: Red; }
+Inline CSS > internal/external CSS
+keyword !important makes a setting non-overwritable
+Types of selectors in CSS:
+    1. Element Selectors        : p {background-color="red";}
+    2. ID Selectors             : #myID {background-color="red";}
+    3. Class Selectors          : .myClass {background-color="red";}
+    4. Grouping Selectors       : p , span , footer {background-color="red";}
