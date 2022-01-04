@@ -1,0 +1,77 @@
+Tags
+Attributes
+Tags contains Attributes
+Tags are of two types: 1. Those which need to be closed
+                       2. Those which don't need to be closed
+Tag opening -> Attributes insertion -> Content writing -> Tag closing
+<<Tag name> <Attribute name> = "<Attribute content>"> <content> </<Tag name>>
+
+
+Basic syntax:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+Initialization: <html></html>
+Head deffinition: <head><All meta tags and title tag></head>
+Meta Tags: <meta <attribute deffinition>>
+Add css: <link rel="stylesheet" href="filename.css">
+Add js file: <script src="filename.js"></script>
+Title: <title></title>
+Main body of the website: <body></body>
+Heading: <h1></h1> to <h6></h6>
+Paragraph: <p></p>
+Line break: <br>
+Horizontal Line: <hr>
+Strong: <strong></strong>
+Emphasis: <em></em>
+Bold: <b></b>
+Italic: <i></i>             (Strong/Emphasis are recommended above Bold/Italic)
+Add Link: <a href="<link>"><Link name></a> 
+Insert image: <img scr = "<source of image>" alt = "<alternate text to be shown in case of error while loding image>" [width = "<width>" height = "<height>"]>              (Width and Height is not recommended to be set in HTML, CSS is generally used for such purpose)
+Create list: 1. Ordered list:   <ol [type="<1/i/I/A/a>"]> 
+                                    <li> <first list element> </li>
+                                    <li> <second list element> </li>
+                                </ol>
+             2. Unordered list: <ul [type="<disk/circle/square>"]>
+                                    <li> <first list element> </li>
+                                    <li> <second list element> </li>
+                                </ul>
+Create table:   <table>
+                    <thead>                                             (Table head)
+                        <tr>                                            (Table head row)
+                            <th> <Data of the column> </th>             (Tablel head row's column names)
+                        </tr>
+                    </thead>
+                    <tbody>                                             (Table body)        
+                        <tr>                                            (Table body rows)
+                            <td> <Data of the column> </td>             (Table body rows columns' data)
+                        </tr>
+                    </tbody>
+Create forums:  <form action="<backend filename where response has to be stored>">                              (Create a form)
+                    <div>                                                                                       (Create a division/entry)
+                        <Entry name to be displayed> : <input type = <input datatype> [name="<backend name>"]>  (Input data)
+                    </div>
+                    <div>                                                                                       (Create a new division/entry)
+                        <input type="submit" value="<Text of submit button>">    
+                    </div>
+                </form>
+
+Emmet functions of VS Code for faster typing:
+Basic syntax: !
+Add css file: link:css
+Add js file: script:scr
+Write dummy text: Lorem<number of dummy words>
+Add links: a
+Insert image: img
