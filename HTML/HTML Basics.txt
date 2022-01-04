@@ -68,6 +68,26 @@ Create forums:  <form action="<backend filename where response has to be stored>
                     </div>
                 </form>
 
+
+                Input types in forums:  1. text/date/time/number/email
+                                        2. submit/reset
+                                        3. radio                                                       (For radio to work properly: use the same name attribute for entries of two or more radio buttons)
+                                        4. checkbox                                                    (Use "checked" keyword to set checked condition as default)
+                                        5. textbox                                                     (Use cols and rows attributes for height and width)
+                Lable tag:  <lable for="<name for the same>"> <name> </lable> <input type="inputType" name="nameInBackend" id="<name>>
+                            Note: id attribute must be used in input tag for lable tag to work
+                Select tag: <select 
+
+Inline elements and Block elements
+IDs: IDs are identifiers which must be unique and one ID can be used with only a single block
+Classes: Classes are the defined set of formatting which can be used for multiple blocks
+
+HTML entities: Used to print characters which are usually used as reserved keywords in HTML
+    &nbsp; : non breaking space 
+    &lt; : <
+    &gt; : >      etc. 
+Details and summary: <details> <summary> <Summary of this detail> </summary> <full content> </detail>           (Summary will always be shown while the content will show only when details dropdown arrow is pressed)
+
 Emmet functions of VS Code for faster typing:
 Basic syntax: !
 Add css file: link:css
