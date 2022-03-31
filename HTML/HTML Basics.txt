@@ -1,6 +1,6 @@
 Tags
 Attributes
-Tags contains Attributes
+Tags contain Attributes
 Tags are of two types: 1. Those which need to be closed
                        2. Those which don't need to be closed
 Tag opening -> Attributes insertion -> Content writing -> Tag closing
@@ -22,6 +22,7 @@ Basic syntax:
 </body>
 </html>
 
+<!-- This is how we can comment -->
 
 Initialization: <html></html>
 Head deffinition: <head><All meta tags and title tag></head>
