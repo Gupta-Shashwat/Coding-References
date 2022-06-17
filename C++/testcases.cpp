@@ -1,55 +1,40 @@
 #include<iostream>
 using namespace std;
-class Base
-{
-    int data1;
-    public:
-        int data2;
-        void setdata();
-        int getdata1();
-        int getdata2();
-};
 
-class Derived : public Base
+int search(int *arr,int e, int x)
 {
-    int data3;
-    public: 
-        void process();
-        void display();
-};
-
-void Base :: setdata()
-{
-    data1 = 10;
-    data2 = 20;
+    for (int i = 0; i < e; i++){ 
+        if (arr[i] == x)
+        {
+            return i;
+        }
+    }
+    return -1;
 }
 
-int Base :: getdata1()
+void func()
 {
-    return data1;
-}
-
-int Base :: getdata2()
-{
-    return data2;
-}
-
-void Derived :: process()
-{
-    data3 = data2 * getdata1();
-}
-
-void Derived :: display()
-{
-    cout << "The value of data 1 is: " << getdata1() << endl;
-    cout << "The value of data 2 is: " << data2 << endl;
-    cout << "The value of data 3 is: " << data3 << endl;
+    int e;
+    cout << "Enter the number of elements in the array: ";
+    cin >> e;
+    int arr[e], x;
+    cout << "Enter the elements of the array: ";
+    for (int j = 0; j < e; j++){ 
+        cin >> arr[j];
+    }
+    cout << "Enter the value of the search number: ";
+    cin >> x;
+    cout << "The index at which " << x << " is found in the given array is ";
+    cout << search(arr, e, x) << endl;
 }
 
 int main(){
-    Derived der;
-    der.setdata();
-    der.process();
-    der.display();
+    int t, e;
+    cout << "Enter the number of test cases: ";
+    cin >> t;
+    while (t > 0){
+        func();
+        t--;
+    }
     return 0;
 }
