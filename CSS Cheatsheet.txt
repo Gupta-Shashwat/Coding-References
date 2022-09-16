@@ -1,0 +1,24 @@
+Basic syntax: 
+    selector { Property : Value; Another property : Value; }
+example:
+    p { background-color: Red; }
+
+/* This is how to comment in CSS */
+
+Inline CSS > internal/external CSS
+
+Inline CSS is written in <style> </style> tag of HTML document
+External CSS is written in a .css file and added in HTML by <link rel="stylesheet" href="filename.css"> tag
+
+keyword "!important" makes a setting non-overwritable
+
+Types of selectors in CSS:
+    1. Element Selectors        : p {background-color="red";}
+    2. ID Selectors             : #myID {background-color="red";}
+    3. Class Selectors          : .myClass {background-color="red";}
+    4. Grouping Selectors       : p , span , footer {background-color="red";}
+
+Types of fonts in CSS:
+    1. Web Safe Fonts : fonts which are pre-installed in the operating system
+    2. Web Fonts : fonts which are not pre-installed and need to be added through web 
+
