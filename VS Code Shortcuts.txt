@@ -1,6 +1,0 @@
-Shift + Enter : New line just after the current one
-F5 : Debug program
-Ctrl + F5 : Run without debugging
-Ctrl + N : Create new file
-Ctrl + / : Comment/Uncomment a line
-Ctrl + d : duplicate content on next line
